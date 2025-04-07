@@ -11,13 +11,17 @@ function createGrid(value) {
         container.removeChild(container.lastChild);
     }
     const totalsquares = value * value;
-    for (i = 0; i < totalsquares; i++) {
-        const gridBlock = document.createElement("div");
-        gridBlock.setAttribute("class", "gridblock");
-        gridBlock.setAttribute("id", "gblock");
-        gridBlock.style.width = 800 / value + "px";
-        gridBlock.style.height = 800 / value + "px";
-        container.appendChild(gridBlock);
+    for (i = 0; i < value; i++) {
+        const newLine = document.createElement("div");
+        for (j = 0; j < value; j++) {
+            const gridBlock = document.createElement("div");
+            gridBlock.setAttribute("class", "gridblock");
+            gridBlock.setAttribute("id", "gblock");
+            gridBlock.style.width = 800 / value + "px";
+            gridBlock.style.height = 800 / value + "px";
+            newLine.appendChild(gridBlock);
+        }
+        container.appendChild(newLine);
     }
 }
 
