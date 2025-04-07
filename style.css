@@ -1,0 +1,59 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+    font-family: verdana;
+}
+html {
+    box-sizing: border-box;
+}
+button {
+    width: 100px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    border: 0px;
+    background-color:rgb(201, 201, 201);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    margin: 10px 0px 5px;
+}
+.menu {
+    margin-top: 10px;
+}
+
+.container {
+    border: 3px solid black;
+    width: 800px;
+    margin-top: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:end;
+}
+
+.gridblock {
+    background-color: rgb(255, 255, 255);
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+}
+
+.gridblockdark {
+    background-color: rgb(0, 0, 0);
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+}
+
+.gridrainbow {
+    background-color: rgb(0, 0, 0);
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+}
